@@ -5,7 +5,7 @@ using UnityEngine;
 public class Unit : MonoBehaviour
 {
     private Vector3 targetPosition; // the goal
-
+   
     private void Update()
     {
         float stoppingDistance = .1f; // the condition to put it so the character stop and not keep moving
@@ -15,17 +15,24 @@ public class Unit : MonoBehaviour
             float moveSpeed = 4f;
             transform.position += moveDirection * moveSpeed * Time.deltaTime; // to move the character == the direction * movespeed *  Time.deltaTime
         }
-
-        if (Input.GetKeyDown(KeyCode.T))
+        if (Input.GetMouseButtonDown(0))
         {
-            Move(new Vector3(4, 0, 4));
-            
+            Move(MouseWorld.GetPosition()); // the target will be the mouse position
         }
+       /*
+        * before it was going to fixed place , now the new one will go to the the mouse position
+        * 
+        * if (Input.GetKeyDown(KeyCode.T))
+        {
+            Move(new Vector3(4, 0, 4));   
+        }
+       */
     }
 
     private void Move(Vector3 targetPosition) // to make the  character move , we will make the variable be accsesible so we change it's value in the update
     {
         this.targetPosition = targetPosition; //this is the variable of the class
+        // the method will have the location, which is the target , where we want the player go to it
     }
 
 }
