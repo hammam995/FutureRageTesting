@@ -17,6 +17,13 @@ public class Unit : MonoBehaviour
             float moveSpeed = 4f;
             transform.position += moveDirection * moveSpeed * Time.deltaTime; // to move the character == the direction * movespeed *  Time.deltaTime
             
+            float rotateSpeed = 10f;
+            transform.forward = Vector3.Lerp(transform.forward, moveDirection, Time.deltaTime * rotateSpeed);
+            
+            
+           // transform.forward = moveDirection; // we have to remove it and use the new one with the lerp
+            
+            
             unitAnimator.SetBool("IsWalking", true); // Animation movement condition will be true if we aren't reaching to the stopping distsnce
         }
         else
