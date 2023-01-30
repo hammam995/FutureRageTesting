@@ -8,6 +8,15 @@ public class Unit : MonoBehaviour
 
     private Vector3 targetPosition; // the goal
    
+    private void Awake()
+    {
+        targetPosition = transform.position; // we do this so the other unit stay in it's place and not going to the center position point (0,0,0) , because at the beginning the value of the targetPosition is zero , so by doing this the Unit will stay in it's spawn position and not moving to the center point (0,0,0)
+    }
+
+    
+    
+    
+    
     private void Update()
     {
         float stoppingDistance = .1f; // the condition to put it so the character stop and not keep moving
@@ -30,10 +39,7 @@ public class Unit : MonoBehaviour
         {
             unitAnimator.SetBool("IsWalking", false); // Animation movement condition will be false if we are reaching to the stopping distsnce
         }
-        if (Input.GetMouseButtonDown(0))
-        {
-            Move(MouseWorld.GetPosition()); // the target will be the mouse position
-        }
+        
        /*
         * before it was going to fixed place , now the new one will go to the the mouse position
         * 
@@ -44,7 +50,7 @@ public class Unit : MonoBehaviour
        */
     }
 
-    private void Move(Vector3 targetPosition) // to make the  character move , we will make the variable be accsesible so we change it's value in the update
+    public void Move(Vector3 targetPosition) // to make the  character move , we will make the variable be accsesible so we change it's value in the update
     {
         this.targetPosition = targetPosition; //this is the variable of the class
         // the method will have the location, which is the target , where we want the player go to it
