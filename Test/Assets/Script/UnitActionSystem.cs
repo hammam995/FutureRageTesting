@@ -19,6 +19,7 @@ public class UnitActionSystem : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0)) // if we click on the mouse button
         {
+            // in the first time we will select the character will not move , but after wee select it we can move it , before it was select and moving in same time
             if (TryHandleUnitSelection()) return; // if it's true we breake and go out , by not continue to the next lines , we exit from the conditions of the mouse button
             selectedUnit.Move(MouseWorld.GetPosition());
             // the target will be the mouse position
@@ -46,7 +47,7 @@ public class UnitActionSystem : MonoBehaviour
     private void SetSelectedUnit(Unit unit) // we are doing it as proprity , setter and getter
     {
         selectedUnit = unit; // to fire the event
-        OnSelectedUnitChanged?.Invoke(this, EventArgs.Empty);
+        OnSelectedUnitChanged?.Invoke(this, EventArgs.Empty); // when we change or select the Unit we want this event to happen
 
     }
     
