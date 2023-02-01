@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,16 +8,23 @@ public class Unit : MonoBehaviour
     [SerializeField] private Animator unitAnimator; // top controll the animatior conditions
 
     private Vector3 targetPosition; // the goal
+
+
+    private GridPosition gridPosition;
    
     private void Awake()
     {
         targetPosition = transform.position; // we do this so the other unit stay in it's place and not going to the center position point (0,0,0) , because at the beginning the value of the targetPosition is zero , so by doing this the Unit will stay in it's spawn position and not moving to the center point (0,0,0)
     }
 
-    
-    
-    
-    
+    private void Start()
+    {
+       // GridPosition gridPosition = LevelGrid.Instance.GetGridPosition(transform.position);
+        gridPosition = LevelGrid.Instance.GetGridPosition(transform.position);
+        LevelGrid.Instance.SetUnitAtGridPosition(gridPosition , this);
+    }
+
+
     private void Update()
     {
         float stoppingDistance = .1f; // the condition to put it so the character stop and not keep moving
@@ -48,6 +56,19 @@ public class Unit : MonoBehaviour
             Move(new Vector3(4, 0, 4));   
         }
        */
+       
+       
+       GridPosition newGridPosition = LevelGrid.Instance.GetGridPosition(transform.position); // to calculate aNOTHER GRID POSITION ,for the cvurrent position
+       if (newGridPosition != gridPosition) // the error it can be automatically been applied because it's struct
+       {
+           LevelGrid.Instance.UnitMovedGridPosition( this , gridPosition ,newGridPosition);
+           gridPosition = newGridPosition;
+           //Unit change Grid Position
+
+       }
+
+
+
     }
 
     public void Move(Vector3 targetPosition) // to make the  character move , we will make the variable be accsesible so we change it's value in the update

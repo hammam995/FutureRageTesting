@@ -3,15 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="e7f78d43-a61a-4604-8c3f-6daac5d96dd4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/GridDebugObject.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/GridDebugObject.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/GridObject.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/GridObject.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/GridPosition.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/GridPosition.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/GridSystem.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/GridSystem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Grid/GridObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Grid/GridObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Grid/GridPosition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Grid/GridPosition.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Testing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Testing.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Unit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unit.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +18,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Script/Grid/GridDebugObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/LevelGrid.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Testing.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -104,7 +103,7 @@
       <workItem from="1675180017054" duration="3026000" />
       <workItem from="1675239672779" duration="4144000" />
       <workItem from="1675245241932" duration="660000" />
-      <workItem from="1675246071136" duration="3948000" />
+      <workItem from="1675246071136" duration="10738000" />
     </task>
     <servers />
   </component>
