@@ -7,18 +7,31 @@ public class GridSystem
     private int width;
     private int height;
     private float cellSize; // we use it when we handle the grid into the world convertion
+    
+    private GridObject[,] gridObjectArray; // 2D Array
+
 
     public GridSystem(int width, int height, float cellSize)
     {
         this.width = width;
         this.height = height;
         this.cellSize = cellSize;
+        
+        gridObjectArray = new GridObject[width, height]; // before our cycle we identify it , what it's , it will take the x and z
+
 
         for (int x = 0; x < width; x++)
         {
             for (int z = 0; z < height; z++)
             {
-                Debug.DrawLine(GetWorldPosition(x, z), GetWorldPosition(x, z) + Vector3.right * .2f, Color.white, 1000);
+                GridPosition gridPosition = new GridPosition(x, z);
+                gridObjectArray[x, z] = new GridObject(this, gridPosition); // we have to sort them in a good way , so we use 2D Array 
+                // new GridObject(this, gridPosition);
+                // every 2d index or cell , will do new object , have the grid system , and grid position, gridsystem to know  which grid system it's belong to
+                // grid object has been created
+                
+                
+               // Debug.DrawLine(GetWorldPosition(x, z), GetWorldPosition(x, z) + Vector3.right * .2f, Color.white, 1000);
                 // draw a line in the world position , Draws a line between specified start and end points
                 // The duration is the time (in seconds) for which the line will be visible after it is first displayed. A duration of zero shows the line for just one frame
                 // start and end in right by 2 units
@@ -45,6 +58,26 @@ public class GridSystem
         );
     }
 
+    public void CreateDebugObjects(Transform debugPrefab) // to visualize the indexes , grid objects
+    {
+        for (int x = 0; x < width; x++)
+        {
+            for (int z = 0; z < height; z++)
+            {
+                GridPosition gridPosition = new GridPosition(x, z);
+                Transform debugTransform = GameObject.Instantiate(debugPrefab, GetWorldPosition(x,z), Quaternion.identity); // get world position like in the draw line
+               // GameObject.Instantiate(debugPrefab, GetWorldPosition(x,z), Quaternion.identity); // is the same but here we aren't store it
+               // Game Object and transform are exchangably
+            }
+        }
+        // our prefab will be inistiate in every grid position
+    }
+
+    
+    
+    
+    
+    
     
 
 }
