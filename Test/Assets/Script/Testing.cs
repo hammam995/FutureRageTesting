@@ -7,7 +7,7 @@ public class Testing : MonoBehaviour
     // from here we create the Grid system in the game since they are not monobehaviour
     // this is what is on the scene inspector
     
-    [SerializeField] private Transform gridDebugObjectPrefab;
+    [SerializeField] private Transform gridDebugObjectPrefab; // the prefab , the pbject has inside it the TXT
 
     private GridSystem gridSystem; //from the GridSystem class
 

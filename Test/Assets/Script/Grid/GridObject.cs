@@ -15,4 +15,14 @@ public class GridObject
         // store them
     }
     // we have to create ( Grid Object) this object in each and every GridPosition
+    
+    public override string ToString() // to use the same one we have in the Grid Position
+    {
+        return gridPosition.ToString();
+    }
+
+    
+    
+    
+    
 }

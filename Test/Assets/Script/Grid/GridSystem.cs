@@ -40,9 +40,9 @@ public class GridSystem
         }
     }
 
-    public Vector3 GetWorldPosition(int x, int z) // this to convert the grid position to the world position
+    public Vector3 GetWorldPosition(GridPosition gridPosition) // this to convert the grid position to the world position , Berfore it was like this GetWorldPosition(int x, int z)
     {
-        return new Vector3(x, 0, z) * cellSize; // before it was the distance is by one unity , with the cellsize we multiplay the distance between the dashes more than one unit depends on the cell size
+        return new Vector3(gridPosition.x, 0, gridPosition.z) * cellSize; // before it was the distance is by one unity , with the cellsize we multiplay the distance between the dashes more than one unit depends on the cell size
     }
 
     
@@ -65,15 +65,24 @@ public class GridSystem
             for (int z = 0; z < height; z++)
             {
                 GridPosition gridPosition = new GridPosition(x, z);
-                Transform debugTransform = GameObject.Instantiate(debugPrefab, GetWorldPosition(x,z), Quaternion.identity); // get world position like in the draw line
+                Transform debugTransform = GameObject.Instantiate(debugPrefab, GetWorldPosition(gridPosition), Quaternion.identity); // get world position like in the draw line
                // GameObject.Instantiate(debugPrefab, GetWorldPosition(x,z), Quaternion.identity); // is the same but here we aren't store it
                // Game Object and transform are exchangably
+               GridDebugObject gridDebugObject = debugTransform.GetComponent<GridDebugObject>();
+              // gridDebugObject.SetGridObject(gridObjectArray[x,z]); // make it as proper ,getter and setter , to take  the position
+              gridDebugObject.SetGridObject(GetGridObject(gridPosition)); //take the position from here
+              
+
             }
         }
         // our prefab will be inistiate in every grid position
     }
 
-    
+    public GridObject GetGridObject(GridPosition gridPosition)
+    {
+        return gridObjectArray[gridPosition.x, gridPosition.z];
+    }
+
     
     
     
