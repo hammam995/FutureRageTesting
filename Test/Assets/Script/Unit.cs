@@ -21,7 +21,7 @@ public class Unit : MonoBehaviour
     {
        // GridPosition gridPosition = LevelGrid.Instance.GetGridPosition(transform.position);
         gridPosition = LevelGrid.Instance.GetGridPosition(transform.position);
-        LevelGrid.Instance.SetUnitAtGridPosition(gridPosition , this);
+        LevelGrid.Instance.AddUnitAtGridPosition(gridPosition , this);
     }
 
 

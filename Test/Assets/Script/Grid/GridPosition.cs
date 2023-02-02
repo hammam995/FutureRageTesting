@@ -19,11 +19,6 @@ public struct GridPosition :  IEquatable<GridPosition>
     
     //from the system
     // interfaced
-    public bool Equals(GridPosition other)
-    {
-        return this == other;
-    }
-
     public override bool Equals(object obj)
     {
         return obj is GridPosition position &&
@@ -31,12 +26,16 @@ public struct GridPosition :  IEquatable<GridPosition>
                z == position.z;
     }
 
+    public bool Equals(GridPosition other)
+    {
+        return this == other;
+    }
+
     public override int GetHashCode()
     {
         return HashCode.Combine(x, z);
-
-
     }
+
     
 
 
@@ -47,19 +46,16 @@ public struct GridPosition :  IEquatable<GridPosition>
         // it is the same of "x: " + x + "; x: " + z ; 
     }
     
-    public static bool operator ==( GridPosition a, GridPosition b) // because it's struct we do this
+    public static bool operator ==(GridPosition a, GridPosition b)
     {
         return a.x == b.x && a.z == b.z;
-
-
     }
 
-    public static bool operator !=(GridPosition a, GridPosition b) 
+    public static bool operator !=(GridPosition a, GridPosition b)
     {
-
         return !(a == b);
-
     }
+
     
     
     
