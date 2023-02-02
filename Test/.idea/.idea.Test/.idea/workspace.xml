@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e7f78d43-a61a-4604-8c3f-6daac5d96dd4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Grid/GridObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Grid/GridObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Grid/GridPosition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Grid/GridPosition.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/LevelGrid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/LevelGrid.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Unit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
@@ -104,6 +101,7 @@
       <workItem from="1675245241932" duration="660000" />
       <workItem from="1675246071136" duration="10738000" />
       <workItem from="1675324252130" duration="1943000" />
+      <workItem from="1675343363221" duration="1922000" />
     </task>
     <servers />
   </component>

@@ -430,9 +430,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 9.484452, y: 2.6271667, z: 2.427519}
+    m_Target: {x: 7.934689, y: 4.0044007, z: 5.2220216}
     speed: 2
-    m_Value: {x: 9.484452, y: 2.6271667, z: 2.427519}
+    m_Value: {x: 7.934689, y: 4.0044007, z: 5.2220216}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -479,13 +479,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.49133956, y: -0.15004075, z: 0.08637114, w: 0.85356337}
+    m_Target: {x: 0.25176406, y: -0.5769331, z: 0.19299626, w: 0.75264513}
     speed: 2
-    m_Value: {x: 0.4913501, y: -0.15004396, z: 0.086372994, w: 0.85358167}
+    m_Value: {x: -0.25176406, y: 0.5769331, z: -0.19299626, w: -0.75264513}
   m_Size:
-    m_Target: 3.445399
+    m_Target: 15.235823
     speed: 2
-    m_Value: 3.445399
+    m_Value: 15.235823
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1175,7 +1175,7 @@ MonoBehaviour:
   - {fileID: 9}
   - {fileID: 2}
   m_Selected: 2
-  m_LastSelected: 0
+  m_LastSelected: 1
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1218,22 +1218,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Script/Grid
+    - Assets/Script
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Script/Grid
+  - Assets/Script
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\hamam.zahran\Documents\Hamam\Testing\FutureRageTesting\Test
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b66b0000
-    m_LastClickedID: 27574
-    m_ExpandedIDs: 00000000d4690000e869000000ca9a3bffffff7f
+    m_SelectedIDs: 386d0000
+    m_LastClickedID: 27960
+    m_ExpandedIDs: 00000000866b000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1261,7 +1261,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d469000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000866b000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1286,8 +1286,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 30fbffff
-    m_LastClickedInstanceID: -1232
+    m_SelectedInstanceIDs: b2690000
+    m_LastClickedInstanceID: 27058
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
@@ -1365,8 +1365,8 @@ MonoBehaviour:
     y: 0
     width: 332
     height: 939
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 11}
   m_Panes:
   - {fileID: 11}
@@ -1404,9 +1404,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 30fbffff
-      m_LastClickedID: -1232
-      m_ExpandedIDs: 32fbffff
+      m_SelectedIDs: b2690000
+      m_LastClickedID: 27058
+      m_ExpandedIDs: 16fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1449,8 +1449,8 @@ MonoBehaviour:
     y: 0
     width: 376
     height: 939
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
